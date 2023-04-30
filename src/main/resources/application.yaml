@@ -1,0 +1,9 @@
+zeebe:
+  client:
+    worker:
+      defaultName: Human Task
+      defaultType: io.camunda.zeebe:userTask
+      threads: 2
+    job.timeout: 2592000000 # 30 days
+    broker.gateway-address: zeebe.cn:26500
+    security.plaintext: true
